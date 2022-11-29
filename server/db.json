@@ -1,0 +1,233 @@
+{
+    "press": [
+      {
+        "id": 1,
+        "code":"SSPPR101",
+        "name": "400 تن",
+        "maker":"لهستان",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+      {
+        "id": 2,
+        "code":"SSPPR102",
+        "name": "100 تن",
+        "maker":"لهستان",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+      {
+        "id": 3,
+        "code":"SSPPR103",
+        "name": "100 تن",
+        "maker": "لهستان",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+      {
+        "id": 4,
+        "code":"SSPPR104",
+        "name": "100 تن",
+        "maker": "یوگوسلاوی",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+      {
+        "id": 5,
+        "code":"SSPPR105",
+        "name": "160 تن",
+        "maker": "روسیه",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+      {
+        "id": 6,
+        "code":"SSPPR106",
+        "name": "160 تن",
+        "maker": "روسیه",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+      {
+        "id": 7,
+        "code":"SSPPR107",
+        "name": "800 تن",
+        "maker": "ایران",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+      {
+        "id": 8,
+        "code":"SSPPR108",
+        "name": "100 تن",
+        "maker": "ایران",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+      {
+        "id": 9,
+        "code":"SSPPR109",
+        "name": "250 تن",
+        "maker": "ایران",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+      {
+        "id": 10,
+        "code":"SSPPR110",
+        "name": "1200 تن",
+        "maker": "ایران",
+        "type":"هیدرولیک",
+        "image":"/images/hydroulic/SSPPR101.jpg",
+        "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      },
+  {
+    "id": 11,
+        "code":"SSPPR111",
+  "name": "400 تن",
+  "maker": "روسیه",
+  "type":"هیدرولیک",
+  "image":"/images/hydroulic/SSPPR101.jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  },
+  {
+    "id": 12,
+    "code":"SSPPR201",
+  "name": "200 KVA",
+  "maker": "ایران",
+  "type":"پرس جوش",
+  "image":"/images/Welding press/SSPAS201.jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  },
+  {
+    "id": 13,
+    "code":"SSPPR202",
+  "name": "150 KVA",
+  "maker": "ایران",
+  "type":"پرس جوش",
+  "image":"/images/Welding press/SSPAS202.jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  },
+  {
+    "id": 14,
+    "code":"SSPPR203",
+  "name": "300 KVA",
+  "maker": "ایران",
+  "type":"پرس جوش",
+  "image":"/images/Welding press/SSPAS203.jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  },
+  {
+    "id": 15,
+    "code":"SSPPR204",
+  "name": "250 KVA",
+  "maker": "ایران",
+  "type":"پرس جوش",
+  "image":"/images/Welding press/.SSPAS204jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  },
+  {
+    "id": 16,
+    "code":"SSPPR205",
+  "name": "400 KVA",
+  "maker": "ایران",
+  "type":"پرس جوش",
+  "image":"/images/Welding press/.SSPAS205jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  },
+  {
+    "id": 17,
+    "code":"SSPPR206",
+  "name": "200 KVA",
+  "maker": "ایران",
+  "type":"پرس جوش",
+  "image":"/images/Welding press/.SSPAS206jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  },
+  {
+    "id": 18,
+    "code":"SSPPR207",
+  "name": "200 KVA",
+  "maker": "ایران",
+  "type":"پرس جوش",
+  "image":"/images/Welding press/.SSPAS207jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  },
+  {
+    "id": 19,
+    "code":"SSPPR208",
+  "name": "100 KVA",
+  "maker": "ایران",
+  "type":"پرس جوش",
+  "image":"/images/Welding press/.SSPAS208jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  },
+  {
+    "id": 20,
+    "code":"SSPPR209",
+  "name": "150 KVA",
+  "maker": "ایران",
+  "type":"پرس جوش",
+  "image":"/images/Welding press/.SSPAS209jpg",
+  "OEE":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+  }
+  
+  
+    ],
+    "p":[
+        {
+            "id":1,
+            "code":"SSPPR101",
+            "name":"400 تن",
+            "maker":"لهستان",
+            "type":"هیدرولیک"
+        },
+        {
+            "id":2,
+            "code":"SSPPR102",
+            "name":"100 تن",
+            "maker":"لهستان",
+            "type":"هیدرولیک"
+        },
+        {
+            "id":3,
+            "code":"SSPPR103",
+            "name":"100 تن",
+            "maker":"لهستان",
+            "type":"هیدرولیک"
+        },
+        {
+            "id":4,
+            "code":"SSPPR104",
+            "name":"100 تن",
+            "maker":"یوگوسلاوی",
+            "type":"هیدرولیک"
+        },
+        {
+            "id":5,
+            "code":"SSPPR105",
+            "name":"160 تن",
+            "maker":"روسیه",
+            "type":"هیدرولیک"
+        },
+        {
+            "id":6,
+            "code":"SSPPR106",
+            "name":"400 تن",
+            "maker":"روسیه",
+            "type":"هیدرولیک"
+        }
+    ]
+    
+  }
+  
+  

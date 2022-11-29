@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-export default function Home() {
+export default function Press() {
   return (
     <div className='p-2'>
       <Head>
@@ -17,41 +17,60 @@ export default function Home() {
             <Image src="/images/logo.webp" alt="sisako logo" width={60} height={60}/>
           </div>
           <div className='flex-1 flex justify-start items-center gap-9'>
-            <Link legacyBehavior href="/press"><a className='py-3 px-3 rounded-md hover:bg-sky-600 transition-all duration-300'>پرس ها</a></Link>
-            <Link legacyBehavior href="#"><a className='py-3 px-3 rounded-md hover:bg-sky-600 transition-all duration-300'>قالب ها</a></Link>
-            <Link legacyBehavior href="#"><a className='py-3 px-3 rounded-md hover:bg-sky-600 transition-all duration-300'> پرسنل</a></Link>
+            <Link legacyBehavior href="#"><a>پرس ها</a></Link>
+            <Link legacyBehavior href="#"><a>قالب ها</a></Link>
+            <Link legacyBehavior href="#"><a> پرسنل</a></Link>
           </div>
         </nav>
       </header>
     <main className='flex flex-col justify-center items-center gap-10 py-4'>
-      <Link href="/press" legacyBehavior><a className='w-full'>
+    <Link href="/press/type/pnuematic" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
-        <img src="/images/sections/press.jpg" alt="press" class="w-48 h-48 object-center object-cover" />
+        <img src="/images/press/section/pneumatic.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
       </div>
         <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>پرس های سیساکو</h2>
+          <h2> پرس های ضربه ای</h2>
         </div>
       </div>
         </a></Link>
-
-        <Link href="#" legacyBehavior><a className='w-full'>
+        <Link href="press/type/هیدرولیک" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
-        <img src="/images/sections/die.png" alt="press" class="w-48 h-48 object-center object-cover" />
+        <img src="/images/press/section/hydrolic.png" alt="hydrolic" class="w-48 h-48 object-center object-cover" />
       </div>
         <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2> قالب های سیساکو</h2>
+          <h2> پرس های  هیدرولیک</h2>
         </div>
       </div>
         </a></Link>
         <Link href="#" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
-        <img src="/images/sections/personnel.png" alt="press" class="w-48 h-48 object-center object-cover" />
+        <img src="/images/press/section/welding press.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
       </div>
         <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2> پرسنل سیساکو</h2>
+          <h2> پرس جوش ها</h2>
+        </div>
+      </div>
+        </a></Link>
+        <Link href="#" legacyBehavior><a className='w-full'>
+      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
+      <div className='rounded-md overflow-hidden'>
+        <img src="/images/press/section/welding co2.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
+      </div>
+        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
+          <h2>جوش co2</h2>
+        </div>
+      </div>
+        </a></Link>
+        <Link href="#" legacyBehavior><a className='w-full'>
+      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
+      <div className='rounded-md overflow-hidden'>
+        <img src="/images/press/section/welding gun.jfif" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
+      </div>
+        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
+          <h2> گان جوش ها</h2>
         </div>
       </div>
         </a></Link>

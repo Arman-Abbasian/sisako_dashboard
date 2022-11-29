@@ -1,9 +1,15 @@
+import axios from 'axios'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 
-export default function Home() {
+export default function Hydrolic({data}) {
+  console.log(data.data)
+  useEffect(()=>{
+    axios.get(`http://localhost:4000/press?type=هیدرولیک`).then(res=>console.log(res.data)).catch(err=>console.log(err))
+  },[])
   return (
     <div className='p-2'>
       <Head>
@@ -35,26 +41,6 @@ export default function Home() {
       </div>
         </a></Link>
 
-        <Link href="#" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/sections/die.png" alt="press" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2> قالب های سیساکو</h2>
-        </div>
-      </div>
-        </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/sections/personnel.png" alt="press" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2> پرسنل سیساکو</h2>
-        </div>
-      </div>
-        </a></Link>
     </main>
       
       <footer className='fixed bottom-0 right-0 left-2 bg-sky-400 h-20 w-full flex justify-center items-center'>
@@ -62,4 +48,13 @@ export default function Home() {
       </footer>
     </div>
   )
+};
+export async function getStaticProps() {
+const {data}= await axios.get(`http://localhost:4000/p?maker=لهستان`);
+console.log({data})
+  return {
+    props: {
+      data:{data}
+    }, // will be passed to the page component as props
+  }
 }
