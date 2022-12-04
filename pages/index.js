@@ -19,7 +19,7 @@ export default function Home() {
           <div className='flex-1 flex justify-start items-center gap-9'>
             <Link legacyBehavior href="/press"><a className='py-3 px-3 rounded-md hover:bg-sky-600 transition-all duration-300'>پرس ها</a></Link>
             <Link legacyBehavior href="#"><a className='py-3 px-3 rounded-md hover:bg-sky-600 transition-all duration-300'>قالب ها</a></Link>
-            <Link legacyBehavior href="#"><a className='py-3 px-3 rounded-md hover:bg-sky-600 transition-all duration-300'> پرسنل</a></Link>
+            <Link legacyBehavior href="/personnel"><a className='py-3 px-3 rounded-md hover:bg-sky-600 transition-all duration-300'> پرسنل</a></Link>
           </div>
         </nav>
       </header>

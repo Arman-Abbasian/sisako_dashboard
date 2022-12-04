@@ -19,61 +19,32 @@ export default function Press() {
           <div className='flex-1 flex justify-start items-center gap-9'>
             <Link legacyBehavior href="#"><a>پرس ها</a></Link>
             <Link legacyBehavior href="#"><a>قالب ها</a></Link>
-            <Link legacyBehavior href="#"><a> پرسنل</a></Link>
+            <Link legacyBehavior href="/personnel"><a> پرسنل</a></Link>
           </div>
         </nav>
       </header>
     <main className='flex flex-col justify-center items-center gap-10 py-4'>
-    <Link href="/press/type/pnuematic" legacyBehavior><a className='w-full'>
+    <Link href="/personnel/type/تولیدی" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/pneumatic.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
+        <img src="/images/personnel/section/producerWorker.png" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
       </div>
         <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
           <h2>نیروهای تولیدی</h2>
         </div>
       </div>
         </a></Link>
-        <Link href="press/type/هیدرولیک" legacyBehavior><a className='w-full'>
+        <Link href="/personnel/type/پشتیبانی" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/hydrolic.png" alt="hydrolic" class="w-48 h-48 object-center object-cover" />
+        <img src="/images/personnel/section/producerWorker.png" alt="hydrolic" class="w-48 h-48 object-center object-cover" />
       </div>
         <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
           <h2>نیروهای پشتیبانی</h2>
         </div>
       </div>
         </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/welding press.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2> پرس جوش ها</h2>
-        </div>
-      </div>
-        </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/welding co2.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>جوش co2</h2>
-        </div>
-      </div>
-        </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/welding gun.jfif" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2> گان جوش ها</h2>
-        </div>
-      </div>
-        </a></Link>
+        
     </main>
       
       <footer className='fixed bottom-0 right-0 left-2 bg-sky-400 h-20 w-full flex justify-center items-center'>
