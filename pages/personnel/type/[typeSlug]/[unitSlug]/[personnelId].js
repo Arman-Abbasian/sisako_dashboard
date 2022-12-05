@@ -4,8 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-export default function PersonnelUnit({data,typeSlug}) {
-    console.log(data,typeSlug)
+export default function PersonnelUnit({data}) {
+    console.log(data)
   return (
     <div className='p-2'>
       <Head>
@@ -25,23 +25,15 @@ export default function PersonnelUnit({data,typeSlug}) {
           </div>
         </nav>
       </header>
-    <main className='flex flex-col justify-center items-center gap-10 py-4'>
-    {data && 
-    data.map(item=>{
-        return  <Link key={item.id} href={`/personnel/type/${typeSlug}/${item.unit}`} legacyBehavior><a className='w-full'>
+    <main className='flex flex-col justify-center items-center gap-10 py-4'>  
         <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
         <div className='rounded-md overflow-hidden'>
           <img src="/images/sections/die.png" alt="press" class="w-48 h-48 object-center object-cover" />
         </div>
           <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-            <h2>{item.unit}</h2>
+            <h2>{data.name}</h2>
           </div>
         </div>
-          </a></Link>
-    })
-        
-    }
-        
     </main>
       
       <footer className='fixed bottom-0 right-0 left-2 bg-sky-400 h-20 w-full flex justify-center items-center'>
@@ -51,12 +43,11 @@ export default function PersonnelUnit({data,typeSlug}) {
   )
 };
 export async function getServerSideProps({query}) {
-    const typeSlug= query.typeSlug;
-    const {data}= await axios.get(`http://localhost:4000/unitType?type=${query.typeSlug}`)
+    const personnelId= query.personnelId;
+    const {data}= await axios.get(`http://localhost:4000/personnel/${personnelId}`)
     console.log(data)
     return { 
       props: { 
-      data ,
-      typeSlug:typeSlug
+      data
     } }
   }

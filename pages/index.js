@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
         </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
+        <Link href="/personnel" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/sections/personnel.png" alt="press" class="w-48 h-48 object-center object-cover" />

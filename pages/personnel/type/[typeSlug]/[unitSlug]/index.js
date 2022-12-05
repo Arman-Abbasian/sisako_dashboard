@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react';
 
 
-export default function PersonnelName({unit}) {
-    console.log(unit);
+export default function PersonnelName({unit,type}) {
+    console.log(type);
     const [personnel,setPersonnel]=useState({data:null,error:null,loading:false});
     useEffect(()=>{
         setPersonnel({data:null,error:null,loading:true});
@@ -41,7 +41,7 @@ export default function PersonnelName({unit}) {
     <main className='flex flex-col justify-center items-center gap-10 py-4'>
     {personnel.data && 
     personnel.data.map(item=>{
-        return  <Link href="#" legacyBehavior><a className='w-full'>
+        return  <Link href={`personnel/type/${type}/${unit}/${item.id}`} legacyBehavior><a className='w-full'>
         <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
         <div className='rounded-md overflow-hidden'>
           <img src="/images/sections/die.png" alt="press" class="w-48 h-48 object-center object-cover" />
@@ -64,6 +64,13 @@ export default function PersonnelName({unit}) {
   )
 };
 export async function getServerSideProps({query}) {
-    const unit=query.unitSlug
-    return { props: { unit } }
+    const unit=query.unitSlug;
+    const type=query.typeSlug
+    return { props: 
+      { 
+        unit,
+        type:type,
+        unit:unit
+       } 
+      }
   }

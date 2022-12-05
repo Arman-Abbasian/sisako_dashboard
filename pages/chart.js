@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import {
   LineChart,
   Line,
@@ -8,43 +9,50 @@ import {
   CartesianGrid
 } from "recharts";
 
-const data = [
-  {
-    name: "Sun",
-    value: 10
-  },
-  {
-    name: "Mon",
-    value: 30
-  },
-  {
-    name: "Tue",
-    value: 100
-  },
-  {
-    name: "Wed",
-    value: 30
-  },
-  {
-    name: "Thu",
-    value: 23
-  },
-  {
-    name: "Fri",
-    value: 34
-  },
-  {
-    name: "Sat",
-    value: 120
-  }
-];
+// const data = [
+//   {
+//     name: "Sun",
+//     value: 10
+//   },
+//   {
+//     name: "Mon",
+//     value: 30
+//   },
+//   {
+//     name: "Tue",
+//     value: 100
+//   },
+//   {
+//     name: "Wed",
+//     value: 30
+//   },
+//   {
+//     name: "Thu",
+//     value: 23
+//   },
+//   {
+//     name: "Fri",
+//     value: 34
+//   },
+//   {
+//     name: "Sat",
+//     value: 120
+//   }
+// ];
 
 const SimpleLineChart = () => {
+  const [data,setData]=useState(null);
   const [tooltip, setTooltip] = useState(null);
   const [point, setPoints] = useState(null);
 
+useEffect(()=>{
+  axios.get(`http://localhost:4000/personnel`)
+  .then(res=>setData(res.data))
+  .catch(err=>console.log(err.message))
+},[])
+
   const CustomTooltip = ({ payload }) => {
-    if (payload) {
+    if (payload , data) {
       return (
         <div className="flex justify-center items-center text-white w-16 h-16 rounded-md">
           <p>{payload[0]?.value}</p>
@@ -111,7 +119,7 @@ const SimpleLineChart = () => {
           stroke="#40C0C0"
           dot={true}
           type="monotone"
-          dataKey="value"
+          dataKey="performance"
           activeDot={(e) => {
             onChartMouseMove(e);
             onChartMouseLeave(e);
