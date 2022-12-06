@@ -14,14 +14,14 @@ const data = [
   
   
 return (
-    <div>
+    <>
         <BarChart width={600} height={600} data={data}>
             <Bar dataKey="students" fill="green" />
             <CartesianGrid stroke="#ccc" />
             <XAxis dataKey="name" />
             <YAxis />
         </BarChart>
-  </div>
+        </>
 );
 }
   
