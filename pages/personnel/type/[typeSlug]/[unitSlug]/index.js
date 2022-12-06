@@ -41,7 +41,7 @@ export default function PersonnelName({unit,type}) {
     <main className='flex flex-col justify-center items-center gap-10 py-4'>
     {personnel.data && 
     personnel.data.map(item=>{
-        return  <Link href={`personnel/type/${type}/${unit}/${item.id}`} legacyBehavior><a className='w-full'>
+        return  <Link href={`/personnel/type/${type}/${unit}/${item.id}`} legacyBehavior><a className='w-full'>
         <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
         <div className='rounded-md overflow-hidden'>
           <img src="/images/sections/die.png" alt="press" class="w-48 h-48 object-center object-cover" />

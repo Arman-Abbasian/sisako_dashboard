@@ -355,7 +355,11 @@
           "type":"پشتیبانی",
           "unit":"انبار",
           "position":"اپراتور انبار",
-          "performance":50
+          "performance":[
+            {"name":"فروردین","value":40},
+            {"name":"اردیبهشت","value":80},
+            {"name":"خرداد","value":20}
+          ]
         }
         
       

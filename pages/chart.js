@@ -1,5 +1,4 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   LineChart,
   Line,
@@ -36,25 +35,18 @@ import {
 //   },
 //   {
 //     name: "Sat",
-//     value: 120
+//     value: 11
 //   }
 // ];
 
-const SimpleLineChart = () => {
-  const [data,setData]=useState(null);
+const SimpleLineChart = ({data,title}) => {
   const [tooltip, setTooltip] = useState(null);
   const [point, setPoints] = useState(null);
 
-useEffect(()=>{
-  axios.get(`http://localhost:4000/personnel`)
-  .then(res=>setData(res.data))
-  .catch(err=>console.log(err.message))
-},[])
-
   const CustomTooltip = ({ payload }) => {
-    if (payload , data) {
+    if (payload) {
       return (
-        <div className="flex justify-center items-center text-white w-16 h-16 rounded-md">
+        <div className="flex justify-center items-center bg-secondary-800 text-white w-12 h-12 rounded-full">
           <p>{payload[0]?.value}</p>
         </div>
       );
@@ -87,23 +79,22 @@ useEffect(()=>{
 
   return (
     <div className="flex caption2 flex-col ui-chart">
-      <div className="ml-24 flex justify-center flex-col w-48 items-center mt-32 mb-10">
-        <p className="caption2">chart 2</p>
-        <p className="subheading2">680</p>
+      <div className="flex justify-center items-center mb-10 text-white">
+        <h1 className="subheading2">{title}</h1>
       </div>
-      <LineChart width={900} height={400} data={data}>
+      <LineChart width={650} height={300} data={data}>
         <CartesianGrid vertical={false} opacity="0.2" />
         <XAxis
-          tick={{ fill: "white" }}
+          tick={{ fill: "black" }}
           axisLine={false}
           tickLine={false}
           dataKey="name"
         />
         <YAxis
-        tick={{ fill: "white" }}
           tickCount={7}
           axisLine={false}
           tickLine={false}
+          tick={{ fill: "black" }}
           type="number"
           domain={[0, 100]}
         />
@@ -112,21 +103,24 @@ useEffect(()=>{
           viewBox={{ x: 0, y: 0, width: 20, height: 20 }}
           cursor={false}
           position="top"
-          wrapperStyle={{ display: "hivalueen" }}
+          wrapperStyle={{ display: "hidden" }}
         />
         <Line
           fill="#40C0C0"
           stroke="#40C0C0"
           dot={true}
           type="monotone"
-          dataKey="performance"
+          dataKey="value"
           activeDot={(e) => {
             onChartMouseMove(e);
             onChartMouseLeave(e);
           }}
         />
       </LineChart>
-        <div className="ui-chart-tooltip text-white flex items-center justify-center" ref={(ref) => setTooltip(ref)}>
+      <div
+        className="ui-chart-tooltip text-white flex items-center justify-center"
+        ref={(ref) => setTooltip(ref)}
+      >
         <div className="ui-chart-tooltip-content"></div>
       </div>
     </div>

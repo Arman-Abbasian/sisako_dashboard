@@ -2,10 +2,11 @@ import axios from 'axios'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import SimpleLineChart from '../../../../chart'
 
 
 export default function PersonnelUnit({data}) {
-    console.log(data)
+    console.log(data.performance)
   return (
     <div className='p-2'>
       <Head>
@@ -25,7 +26,7 @@ export default function PersonnelUnit({data}) {
           </div>
         </nav>
       </header>
-    <main className='flex flex-col justify-center items-center gap-10 py-4'>  
+    <main className='flex flex-col justify-center items-center gap-10 py-4 mb-24'>  
         <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
         <div className='rounded-md overflow-hidden'>
           <img src="/images/sections/die.png" alt="press" class="w-48 h-48 object-center object-cover" />
@@ -33,6 +34,9 @@ export default function PersonnelUnit({data}) {
           <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
             <h2>{data.name}</h2>
           </div>
+        </div>
+        <div className=' max-w-full overflow-x-auto'>
+          <SimpleLineChart data={data.performance} title={`عملکرد ${data.name} به تفکیک ماه`} />
         </div>
     </main>
       
