@@ -7,26 +7,26 @@ import { useEffect, useState } from 'react';
 
 export default function Part({data}) {
   console.log(data)
-    const [parts,setParts]=useState({data:null,errorr:"",loading:false});
+    const [stage,setStage]=useState({data:null,errorr:"",loading:false});
    useEffect(()=>{
-    setParts({data:null,errorr:"",loading:true})
-    axios.get(`http://localhost:4000/die?customer=${data.customerSlug}&product=${data.productSlug}`)
+    setStage({data:null,errorr:"",loading:true})
+    axios.get(`http://localhost:4000/die?customer=${data.customerSlug}&product=${data.productSlug}&part=${data.partSlug}`)
     .then((res)=>{
-        let uniqueParts = [];
-        const parts=res.data.map(item=>item.part);
+        let uniqueStage = [];
+        const parts=res.data.map(item=>item.stage);
         parts.forEach((element) => {
-            if (!uniqueParts.includes(element)) {
-                uniqueParts.push(element);
+            if (!uniqueStage.includes(element)) {
+                uniqueStage.push(element);
             }
         });
-        setParts({data:uniqueParts,errorr:"",loading:false});
+        setStage({data:uniqueStage,errorr:"",loading:false});
     })
     .catch(err=>{
-        setParts({data:null,errorr:err.message,loading:false})
+        setStage({data:null,errorr:err.message,loading:false})
         console.log(err.message)
     })
    },[]);
-   console.log(parts)
+   console.log(stage)
   return (
     <div className='p-2'>
       <Head>
@@ -47,9 +47,9 @@ export default function Part({data}) {
         </nav>
       </header>
     <main className='flex flex-col justify-center items-center gap-10 py-4'>
-    {parts.data && 
-        parts.data.map((item,index)=>(
-            <Link key={index} href={`/die/${data.customerSlug}/${data.productSlug}/${item}`} legacyBehavior><a className='w-full'>
+    {stage.data && 
+        stage.data.map((item,index)=>(
+            <Link key={index} href={`/die/${data.customerSlug}/${data.productSlug}/${data.partSlug}/${item}`} legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/press/section/pneumatic.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
@@ -73,6 +73,7 @@ export default function Part({data}) {
 export async function getServerSideProps({query}) {
     // Fetch data from external API
     const data=query;
+    console.log(query)
   
     // Pass data to the page via props
     return { props: {data :data } }
