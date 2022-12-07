@@ -48,7 +48,7 @@ export default function Customer({customer}) {
     <main className='flex flex-col justify-center items-center gap-10 py-4'>
     {products.data && 
         products.data.map((item,index)=>(
-            <Link key={index} href="/die/سازه گستر" legacyBehavior><a className='w-full'>
+            <Link key={index} href={`/die/${customer}/${item}`} legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/press/section/pneumatic.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
@@ -72,17 +72,17 @@ export default function Customer({customer}) {
 export async function getStaticPaths() {
     return {
       paths: [
-        { params: { productSlug: 'سازه گستر' } },
-        { params: { productSlug: 'پایا کلاچ' } },
-        { params: { productSlug: 'جهان کلاچ' } },
-        { params: { productSlug: 'فرآوری و ساخت' } },
-        { params: { productSlug: 'پل آستارا' } },
+        { params: { customerSlug: 'سازه گستر' } },
+        { params: { customerSlug: 'پایا کلاچ' } },
+        { params: { customerSlug: 'جهان کلاچ' } },
+        { params: { customerSlug: 'فرآوری و ساخت' } },
+        { params: { customerSlug: 'پل آستارا' } },
       ],
       fallback: false,
     }
   };
   export async function getStaticProps({params}) {
-     const customer=params.productSlug;;
+     const customer=params.customerSlug;
     return {
       props: {
         customer:customer

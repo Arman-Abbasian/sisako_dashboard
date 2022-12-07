@@ -2,7 +2,8 @@ import axios from 'axios'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import SimpleLineChart from '../../../../chart'
+import LineChartt from '../../../../../src/components/LineChart'
+import BarChartt from '../../../../../src/components/BarChart'
 
 
 export default function PersonnelUnit({data}) {
@@ -36,8 +37,9 @@ export default function PersonnelUnit({data}) {
           </div>
         </div>
         <div className=' max-w-full overflow-x-auto'>
-          <SimpleLineChart data={data.performance} title={`عملکرد ${data.name} به تفکیک ماه`} />
-        </div>
+          <LineChartt data={data.performance} title={`عملکرد ${data.name} به تفکیک ماه`} />
+        </div> 
+          <BarChartt data={data.performance}/>
     </main>
       
       <footer className='fixed bottom-0 right-0 left-2 bg-sky-400 h-20 w-full flex justify-center items-center'>

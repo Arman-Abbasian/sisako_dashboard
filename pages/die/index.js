@@ -34,7 +34,7 @@ export default function Press() {
         </div>
       </div>
         </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
+        <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/press/section/hydrolic.png" alt="hydrolic" class="w-48 h-48 object-center object-cover" />
@@ -44,7 +44,7 @@ export default function Press() {
         </div>
       </div>
         </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
+        <Link href="/die/فرآوری و ساخت" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/press/section/welding press.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
@@ -54,7 +54,7 @@ export default function Press() {
         </div>
       </div>
         </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
+        <Link href="die/جهان کلاچ" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/press/section/welding co2.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
@@ -64,7 +64,7 @@ export default function Press() {
         </div>
       </div>
         </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
+        <Link href="die/پل آستارا" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/press/section/welding gun.jfif" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
@@ -74,7 +74,7 @@ export default function Press() {
         </div>
       </div>
         </a></Link>
-        <Link href="#" legacyBehavior><a className='w-full'>
+        <Link href="die/گلدیران" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/press/section/welding gun.jfif" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
@@ -85,7 +85,7 @@ export default function Press() {
       </div>
         </a></Link>
         
-        <Link href="#" legacyBehavior><a className='w-full'>
+        <Link href="die/ایران کاوه" legacyBehavior><a className='w-full'>
       <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/press/section/welding gun.jfif" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
