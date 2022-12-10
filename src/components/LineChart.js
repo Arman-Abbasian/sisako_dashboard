@@ -54,7 +54,7 @@ const LineChartt = ({data,title}) => {
       <LineChart width={650} height={300} data={data}>
         <CartesianGrid vertical={false} opacity="0.2" />
         <XAxis
-          tick={{ fill: "black" }}
+          tick={{ fill: "white" }}
           axisLine={false}
           tickLine={false}
           dataKey="name"
@@ -63,7 +63,7 @@ const LineChartt = ({data,title}) => {
           tickCount={7}
           axisLine={false}
           tickLine={false}
-          tick={{ fill: "black" }}
+          tick={{ fill: "white" }}
           type="number"
           domain={[0, 100]}
         />

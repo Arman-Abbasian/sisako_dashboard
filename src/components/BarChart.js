@@ -1,11 +1,14 @@
-import {BarChart,XAxis,YAxis,Bar,ResponsiveContainer} from "recharts";
+import {BarChart,XAxis,YAxis,Bar} from "recharts";
 
-export default function BarChartt({data}) {
+export default function BarChartt({data,title}) {
   return (
-    <ResponsiveContainer width="100%" aspect={1} className="">
+    <div className="text-white">
+    <div className="flex justify-center items-center mb-10 text-white">
+        <h1 className="subheading2">{title}</h1>
+    </div>
     <BarChart width={650} height={300} data={data}>
     <XAxis
-    tick={{ fill: "black" }}
+    tick={{ fill: "white" }}
     axisLine={false}
     tickLine={false}
     dataKey="name"   />
@@ -13,12 +16,12 @@ export default function BarChartt({data}) {
     tickCount={7}
           axisLine={false}
           tickLine={false}
-          tick={{ fill: "black" }}
+          tick={{ fill: "white" }}
           type="number"
           domain={[0, 100]}
     />
     <Bar dataKey="value" barSize={20} fill="#8884d8"/>
   </BarChart>
-</ResponsiveContainer>
+  </div>
   );
 }

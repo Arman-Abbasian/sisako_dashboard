@@ -36,10 +36,12 @@ export default function PersonnelUnit({data}) {
             <h2>{data.name}</h2>
           </div>
         </div>
-        <div className=' max-w-full overflow-x-auto'>
+        <div className=' max-w-full overflow-x-auto text-white'>
           <LineChartt data={data.performance} title={`عملکرد ${data.name} به تفکیک ماه`} />
         </div> 
-          <BarChartt data={data.performance}/>
+        <div className=' max-w-full overflow-x-auto text-white'>
+          <BarChartt data={data.performance} title={`عملکرد ${data.name} به تفکیک ماه`} />
+          </div>
     </main>
       
       <footer className='fixed bottom-0 right-0 left-2 bg-sky-400 h-20 w-full flex justify-center items-center'>
