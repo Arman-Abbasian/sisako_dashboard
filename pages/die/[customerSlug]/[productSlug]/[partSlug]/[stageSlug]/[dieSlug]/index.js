@@ -8,11 +8,12 @@ import { useEffect, useState } from 'react';
 export default function Part({data}) {
   console.log(data)
     const [stage,setStage]=useState({data:null,error:"",loading:false});
+    console.log(stage)
    useEffect(()=>{
-    setStage({data:null,error:"",loading:true})
-    axios.get(`http://localhost:4000/die?customer=${data.customerSlug}&product=${data.productSlug}&part=${data.partSlug}&stage=${data.stageSlug}`)
+    setStage({data:null,errorr:"",loading:true})
+    axios.get(`http://localhost:4000/die?customer=${data.customerSlug}&product=${data.productSlug}&part=${data.partSlug}&stage=${data.stageSlug}&number=${data.dieSlug}`)
     .then((res)=>{
-      console.log(res.data)
+        console.log(res.data)
         setStage({data:res.data,error:"",loading:false});
     })
     .catch(err=>{
@@ -20,7 +21,7 @@ export default function Part({data}) {
         console.log(err.message)
     })
    },[]);
-   console.log(stage)
+   console.log(stage.data)
   return (
     <div className='p-2'>
       <Head>
@@ -41,19 +42,18 @@ export default function Part({data}) {
         </nav>
       </header>
     <main className='flex flex-col justify-center items-center gap-10 py-4'>
-    {stage.data && 
-        stage.data.map((item,index)=>(
-            <Link key={index} href={`/die/${data.customerSlug}/${data.productSlug}/${data.partSlug}/${data.stageSlug}/${item.number}`} legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
+    {stage.data &&   
+      stage.data.map(item=>(
+        <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
       <div className='rounded-md overflow-hidden'>
         <img src="/images/press/section/pneumatic.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
       </div>
         <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
           <h2>{item.stage}</h2>
+          <p>قالب شماره {item.number}</p>
         </div>
       </div>
-        </a></Link>
-        ))
+      ))
     }
 
     </main>

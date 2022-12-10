@@ -6,7 +6,17 @@ module.exports = {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary:{
+          "dark-blue":"#205072",
+          "dark-green":"#329d9c",
+          "light-green":"#cff4d2"
+        }
+        
+
+      }
+    },
   },
   corePlugins: {
     aspectRatio: false,
