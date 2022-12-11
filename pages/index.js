@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import MainAreaChart from '../src/components/MainAreaChart'
+import MainBarChart from '../src/components/MainBarChart'
+import MainLineChart from '../src/components/MainLineChart'
+import MainPieChart from '../src/components/MainPieChart'
 
 
 export default function Home() {
@@ -23,38 +27,52 @@ export default function Home() {
           </div>
         </nav>
       </header>
-    <main className='flex flex-col justify-center items-center gap-10 py-4'>
-      <Link href="/press" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/sections/press.jpg" alt="press" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>پرس های سیساکو</h2>
+    <main className='grid grid-cols-2 md:grid-cols-4 gap-10 py-4  mt-10'>
+      {/* one cart */}
+        <div className='col-span-1 bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+          <div className='flex flex-col gap-4'>
+            <div className='aspect-w-16 aspect-h-9 -mt-8'><img src='/images/main/personnel.png' alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex-1 flex flex-col justify-center items-center'>
+              <h1 className='font-bold'>پرسنل</h1>
+              <p className='text-2xl font-bold'>150</p>
+            </div>
+          </div>
         </div>
-      </div>
-        </a></Link>
+        {/* one cart */}
+        <div className='col-span-1 bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+          <div className='flex flex-col gap-4'>
+            <div className='aspect-w-16 aspect-h-9 -mt-8'><img src='/images/main/press.png' alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex-1 flex flex-col justify-center items-center'>
+              <h1 className='font-bold'>پرس ها</h1>
+              <p className='text-2xl font-bold'>50</p>
+            </div>
+          </div>
+        </div>
+        {/* one cart */}
+        <div className='col-span-1 bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+          <div className='flex flex-col gap-4'>
+            <div className='aspect-w-16 aspect-h-9 -mt-8'><img src='/images/main/die.png' alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex-1 flex flex-col justify-center items-center'>
+              <h1 className='font-bold'>قالب ها</h1>
+              <p className='text-2xl font-bold'>200</p>
+            </div>
+          </div>
+        </div>
+        {/* one cart */}
+        <div className='col-span-1 bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+          <div className='flex flex-col gap-4'>
+            <div className='aspect-w-16 aspect-h-9 -mt-8'><img src='/images/main/product.png' alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex-1 flex flex-col justify-center items-center'>
+              <h1 className='font-bold'>محصولات</h1>
+              <p className='text-2xl font-bold'>70</p>
+            </div>
+          </div>
+        </div>
+        <div className='col-span-2 w-full overflow-auto bg-primary-light-green drop-shadow-lg p-2 rounded-md flex justify-center items-center'><MainLineChart /></div>
+        <div className='col-span-2 w-full overflow-auto bg-primary-light-green drop-shadow-lg p-2 rounded-md flex justify-center items-center'><MainBarChart /></div> 
+        <div className='col-span-2 w-full overflow-auto bg-primary-light-green drop-shadow-lg p-2 rounded-md flex justify-center items-center'><MainAreaChart /></div>
+        <div className='col-span-2 w-full overflow-auto bg-primary-light-green drop-shadow-lg p-2 rounded-md flex justify-center items-center'><MainPieChart /></div>
 
-        <Link href="/die" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/sections/die.png" alt="press" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2> قالب های سیساکو</h2>
-        </div>
-      </div>
-        </a></Link>
-        <Link href="/personnel" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/sections/personnel.png" alt="press" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2> پرسنل سیساکو</h2>
-        </div>
-      </div>
-        </a></Link>
     </main>
       
       <footer className='fixed bottom-0 right-0 left-2 bg-primary-dark-green h-20 w-full flex justify-center items-center'>
