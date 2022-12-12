@@ -13,18 +13,19 @@ const data = [
  const MainPieChart=()=> {
 
     return (
-
-        <PieChart width={300} height={200}>
+        <ResponsiveContainer  width="100%" height={200}>
+        <PieChart>
           <Pie
             dataKey="value"
-            startAngle={180}
-            endAngle={0}
+            startAngle={0}
+            endAngle={360}
             data={data}
-            outerRadius={80}
+            outerRadius={75}
             fill="#329d9c"
             label
           />
         </PieChart>
+        </ResponsiveContainer>
  
     );
   }

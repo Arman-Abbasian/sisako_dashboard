@@ -47,8 +47,8 @@ const data = [
 ];
 
  const MainLineChart =()=> {
-    return (   
-        <LineChart width={300} height={200} data={data}>
+    return (
+        <LineChart width={350} height={200} data={data}>
           <Line type="monotone" dataKey="pv" stroke="#329d9c" strokeWidth={2} />
         </LineChart>
       

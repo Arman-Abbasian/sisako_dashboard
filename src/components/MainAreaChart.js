@@ -51,10 +51,11 @@ const  MainAreaChart=()=> {
   
 
     return (
-
-        <AreaChart width={300} height={200} data={data}>
+        <ResponsiveContainer width="100%" height={200}>
+        <AreaChart data={data}>
           <Area type="monotone" dataKey="pv" stroke="#329d9c" fill="#329d9c" />
         </AreaChart>
+        </ResponsiveContainer>
     );
   }
 export default MainAreaChart;
