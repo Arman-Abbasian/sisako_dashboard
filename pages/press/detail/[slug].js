@@ -3,10 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import {pressCodes} from '../../../server/pressCode';
-
-
+import TinyBarChart from '../../../src/components/TinyBarChart';
+import {dataa} from '../../../src/data';
 export default function PressDetail({data}) {
-  console.log(data)
   return (
     <div className='p-2'>
       <Head>
@@ -27,6 +26,8 @@ export default function PressDetail({data}) {
         </nav>
       </header>
       <main className='grid grid-cols-1 md:grid-cols-2  gap-10 py-4  mt-10 mb-20 container mx-auto'>
+        
+        {/* press card */}
         <div className='grid grid-cols-2 bg-primary-light-green drop-shadow-2xl shadow-primary-dark-green shadow-md p-2 rounded-md gap-4'>
           <div className='aspect-w-1 aspect-h-1 '>
             <img src={`/images/press/press/${data.id}.jpg`} alt="press" className='w-full h-full object-center object-cover rounded-sm' />
@@ -45,6 +46,10 @@ export default function PressDetail({data}) {
               <p className='font-bold'>{data.maker}</p>
             </div>
           </div>
+        </div>
+        {/* one chart */}
+        <div className='p-2 bg-primary-light-green rounded-md'>
+          <TinyBarChart data={dataa} title="OEE"/>
         </div>
       </main>
       

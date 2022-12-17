@@ -23,78 +23,78 @@ export default function Press() {
           </div>
         </nav>
       </header>
-    <main className='flex flex-col justify-center items-center gap-10 py-4'>
-    <Link href="/die/سازه گستر" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/pneumatic.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>سازه گستر</h2>
-        </div>
-      </div>
-        </a></Link>
-        <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/hydrolic.png" alt="hydrolic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>پایا کلاچ</h2>
-        </div>
-      </div>
-        </a></Link>
-        <Link href="/die/فرآوری و ساخت" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/welding press.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>فرآوری و ساخت</h2>
-        </div>
-      </div>
-        </a></Link>
-        <Link href="die/جهان کلاچ" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/welding co2.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>جهان کلاچ</h2>
-        </div>
-      </div>
-        </a></Link>
-        <Link href="die/پل آستارا" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/welding gun.jfif" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>پل آستارا</h2>
-        </div>
-      </div>
-        </a></Link>
-        <Link href="die/گلدیران" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/welding gun.jfif" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>گلدیران</h2>
-        </div>
-      </div>
-        </a></Link>
+      <main className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-4  mt-10 mb-20 container mx-auto'>
+    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+      <Link href="die/سازه گستر " legacyBehavior><a className='w-full'>
+          <div className='grid grid-cols-2  gap-4'>
+            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex  justify-center items-center'>
+              <h1 className='font-bold text-xl'>سازه گستر</h1>
+            </div>
+          </div>
+          </a></Link>
+    </div>
+    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
+          <div className='grid grid-cols-2  gap-4'>
+            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex  justify-center items-center'>
+              <h1 className='font-bold text-xl'>پایا کلاچ</h1>
+            </div>
+          </div>
+          </a></Link>
+    </div>
+    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
+          <div className='grid grid-cols-2  gap-4'>
+            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex  justify-center items-center'>
+              <h1 className='font-bold text-xl'>فرآوری و ساخت</h1>
+            </div>
+          </div>
+          </a></Link>
+    </div>
+    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
+          <div className='grid grid-cols-2  gap-4'>
+            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex  justify-center items-center'>
+              <h1 className='font-bold text-xl'>جهان کلاچ</h1>
+            </div>
+          </div>
+          </a></Link>
+    </div>
+    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
+          <div className='grid grid-cols-2  gap-4'>
+            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex  justify-center items-center'>
+              <h1 className='font-bold text-xl'>پل آستارا</h1>
+            </div>
+          </div>
+          </a></Link>
+    </div>
+    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
+          <div className='grid grid-cols-2  gap-4'>
+            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex  justify-center items-center'>
+              <h1 className='font-bold text-xl'>گلدیران</h1>
+            </div>
+          </div>
+          </a></Link>
+    </div>
         
-        <Link href="die/ایران کاوه" legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/welding gun.jfif" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>ایران کاوه</h2>
-        </div>
-      </div>
-        </a></Link>
+    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
+          <div className='grid grid-cols-2  gap-4'>
+            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
+            <div className='flex  justify-center items-center'>
+              <h1 className='font-bold text-xl'>ایران کاوه</h1>
+            </div>
+          </div>
+          </a></Link>
+    </div>
     </main>
       
       <footer className='fixed bottom-0 right-0 left-2 bg-sky-400 h-20 w-full flex justify-center items-center'>
