@@ -252,43 +252,47 @@
     ],
     "die": [
       {
-        "id": "ُSG RD B 10 R SG",
+        "id":"ُSG RD B 10 R SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل راست",
         "part":"بدنه",
         "stage":"کشش",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       {
-        "id": "SG RD B 20 R SG",
+        "id":"SG RD B 20 R SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل راست",
         "part":"بدنه",
         "stage":"تریم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       {
-        "id": "SG RD B 20 R SG",
+        "id":"SG RD B 20 R SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل راست",
         "part":"بدنه",
         "stage":"تریم",
         "number":2,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":50},{"اردیبهشت":10},{"خرداد":70}]
       },
       { 
-        "id": "SG RD 30 R SG",
+        "id":"SG RD 30 R SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل راست",
         "part":"بدنه",
         "stage":"پانچ اصلی",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG RD B 10 L SG",
+        "id":"SG RD B 10 L SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل چپ",
         "part":"بدنه",
@@ -296,211 +300,315 @@
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG RD B 20 L SG",
+        "id":"SG RD B 20 L SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل چپ",
         "part":"بدنه",
         "stage":"تریم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG RD B 30 L SG",
+        "id":"SG RD B 30 L SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل چپ",
         "part":"بدنه",
         "stage":"پانج اصلی",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": " SG RD R 10 C SG",
+        "id":"SG RD R 10 C SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل راست",
         "part":"براکت",
         "stage":"کشش",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": " SG RD R 20 C SG",
+        "id":"SG RD R 20 C SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل راست",
         "part":"براکت",
         "stage":"تریم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": " SG RD R 30 C SG",
+        "id":"SG RD R 30 C SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل راست",
         "part":"براکت",
         "stage":"کوبش",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": " SG RD R 40 C SG",
+        "id":"SG RD R 40 C SG",
         "customer": "سازه گستر",
         "product":"رینف داش پنل راست",
         "part":"براکت",
         "stage":"پانچ",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG EC S 05 X SG",
+        "id":"SG EC S 05 X SG",
         "customer": "سازه گستر",
         "product":"ای سی یو",
         "part":"بدنه",
         "stage":"بلنک",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG EC S 10 X SG",
+        "id":"SG EC S 10 X SG",
         "customer": "سازه گستر",
         "product":"ای سی یو",
         "part":"بدنه",
         "stage":"خم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG RC B 05 C SG",
+        "id":"SG RC B 05 C SG",
         "customer": "سازه گستر",
         "product":"رینف فریم سی ان جی",
         "part":"بدنه",
         "stage":"بلنک",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG RC B 10 C SG",
+        "id":"SG RC B 10 C SG",
         "customer": "سازه گستر",
         "product":"رینف فریم سی ان جی",
         "part":"بدنه ",
         "stage":"خم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG RC B 05 S SG",
+        "id":"SG RC B 05 S SG",
         "customer": "سازه گستر",
         "product":"رینف فریم سی ان جی کوچک",
         "part":"براکت",
         "stage":"بلنک",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG RC B 10 S SG",
+        "id":"SG RC B 10 S SG",
         "customer": "سازه گستر",
         "product":"رینف فریم سی ان جی کوچک",
         "part":"براکت",
         "stage":"خم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG RC B 05 L SG",
+        "id":"SG RC B 05 L SG",
         "customer": "سازه گستر",
         "product":"رینف فریم سی ان جی بزرگ",
         "part":"براکت",
         "stage":"بلنک",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG RC B 10 L SG",
+        "id":"SG RC B 10 L SG",
         "customer": "سازه گستر",
         "product":"رینف فریم سیان جی بزرگ",
         "part":"براکت",
         "stage":"خم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG BF S 05 X SG",
+        "id":"SG BF S 05 X SG",
         "customer": "سازه گستر",
         "product":"براکت فیلتر هوا",
         "part":"تک",
         "stage":"بلنک",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG BF S 10 X SG",
+        "id":"SG BF S 10 X SG",
         "customer": "سازه گستر",
         "product":"براکت فیلتر هوا",
         "part":"تک",
         "stage":"خم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG BF S 20 X SG",
+        "id":"SG BF S 20 X SG",
         "customer": "سازه گستر",
         "product":"براکت فیلتر هوا",
         "part":"تک",
         "stage":"پانچ",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG ML S 10 B SG",
+        "id":"SG ML S 10 B SG",
         "customer": "سازه گستر",
         "product":"مهره لولا درب عقب پراید",
         "part":"تک",
         "stage":"پروگرسیو",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG ML S 10 F SG",
+        "id":"SG ML S 10 F SG",
         "customer": "سازه گستر",
         "product":"مهره لولا درب جلو پراید",
         "part":"تک",
         "stage":"پروگرسیو",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "ُSG IK S 10 X SG",
+        "id":"SG IK S 10 X SG",
         "customer": "سازه گستر",
         "product":"اینتر کانکشن",
         "part":"تک",
         "stage":"پروگرسیو",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG IK S 20 X SG",
+        "id":"SG IK S 20 X SG",
         "customer": "سازه گستر",
         "product":"اینتر کانکشن",
         "part":"تک",
         "stage":"خم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG BS S 05 X SG",
+        "id":"SG BS S 05 X SG",
         "customer": "سازه گستر",
         "product":" SP100 براکت صندلی",
         "part":"تک",
         "stage":"بلنک",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       },
       { 
-        "id": "SG BS S 10 X SG",
+        "id":"SG BS S 10 X SG",
         "customer": "سازه گستر",
         "product":"SP100براکت صندلی",
         "part":"تک",
         "stage":"خم",
         "number":1,
+        "productImage":"/images/products/rienf.webp",
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
+      }
+    ],
+    "products":[
+      {
+        "id": "1",
+        "product":"رینف داش پنل راست",
+        "customer": "سازه گستر",
+        "image":"/images/products/rienf.webp"
+
+      },
+      {
+        "id": "2",
+        "product":"رینف داش پنل چپ",
+        "customer": "سازه گستر",
+        "image":"/images/products/rienf.webp"
+      },
+      {
+        "id": "3",
+        "customer": "سازه گستر",
+        "product":"ای سی یو",
+        "image":"/images/products/rienf.webp"
+      },
+      {
+        "id": "4",
+        "product":"رینف فریم سی ان جی",
+        "customer": "سازه گستر",
+        "image":"/images/products/rienf.webp"
+      }
+    ],
+
+    "parts":[
+      {
+        "id": "1",
+        "part":"بدنه ",
+        "product":"رینف داش پنل راست",
+        "customer": "سازه گستر",
+        "image":"/images/parts/BRDR.png"
+
+      },
+      {
+        "id": "2",
+        "part":"براکت",
+        "product":"رینف داش پنل راست",
+        "customer": "سازه گستر",
+         "image":"/images/parts/RRDR.png"
+
+      },
+      {
+        "id": "3",
+        "part":"بدنه ",
+        "product":"رینف داش پنل چپ",
+        "customer": "سازه گستر",
+         "image":"/images/parts/BRDL.png"
+      },
+      {
+        "id": "4",
+        "part":"براکت",
+        "product":"رینف داش پنل چپ",
+        "customer": "سازه گستر",
+         "image":"/images/parts/RRDL.png"
+      },
+      {
+        "id": "5",
+        "part":"بدنه",
+        "customer": "سازه گستر",
+        "product":"ای سی یو",
+         "image":"/images/parts/ECU.png"
+      },
+      {
+        "id": "6",
+        "part":"بدنه",
+        "product":"رینف فریم سی ان جی",
+        "customer": "سازه گستر",
+         "image":"/images/parts/BCNG.png"
+      },
+      {
+        "id": "6",
+        "part":"براکت",
+        "product":"رینف فریم سی ان جی",
+        "customer": "سازه گستر",
+         "image":"/images/parts/RCNG.png"
       }
     ],
 
