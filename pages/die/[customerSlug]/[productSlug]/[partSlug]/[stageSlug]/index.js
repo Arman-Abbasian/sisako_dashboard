@@ -40,19 +40,19 @@ export default function Part({data}) {
           </div>
         </nav>
       </header>
-    <main className='flex flex-col justify-center items-center gap-10 py-4'>
+      <main className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-4  mt-10 mb-20 container mx-auto'>
     {stage.data && 
-        stage.data.map((item,index)=>(
-            <Link key={index} href={`/die/${data.customerSlug}/${data.productSlug}/${data.partSlug}/${data.stageSlug}/${item.number}`} legacyBehavior><a className='w-full'>
-      <div className='flex justify-center items-center gap-4  bg-slate-700 bg-opacity-30 shadow-lg drop-shadow-lg rounded-md w-full p-2'>
-      <div className='rounded-md overflow-hidden'>
-        <img src="/images/press/section/pneumatic.webp" alt="pneumatic" class="w-48 h-48 object-center object-cover" />
-      </div>
-        <div className='flex-1 flex justify-center items-center text-sky-400 text-2xl '>
-          <h2>{item.stage}</h2>
-        </div>
-      </div>
-        </a></Link>
+        stage.data.map((item)=>(
+          <div key={item.id} className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+            <Link href={`/die/${data.customerSlug}/${data.productSlug}/${data.partSlug}/${data.stageSlug}/${item.number}`} legacyBehavior><a className='w-full'>
+              <div className='grid grid-cols-2  gap-4'>
+                <div className='aspect-w-1 aspect-h-1 '><img src={item.image} alt={item.stage} className='w-full h-full object-center object-contain' /></div>
+                <div className='flex  justify-center items-center'>
+                  <h1 className='font-bold text-xl'>{item.stage}</h1>
+                </div>
+              </div>
+              </a></Link>
+          </div>
         ))
     }
 
