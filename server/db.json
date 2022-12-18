@@ -207,47 +207,56 @@
       {
         "id":1,
         "type":"تولیدی",
-        "unit":"پرسکاری"
+        "unit":"پرسکاری",
+        "image":"/images/personnel/section/pressing.jpg"
       },
       {
         "id":2,
         "type":"تولیدی",
-        "unit":"مونتاژ"
+        "unit":"مونتاژ",
+        "image":"/images/personnel/section/welding.jpg"
       },
       {
         "id":3,
         "type":"پشتیبانی",
-        "unit":"نت"
+        "unit":"نت",
+        "image":"/images/personnel/section/net.png"
       },
       {
         "id":4,
         "type":"پشتیبانی",
-        "unit":"کنترل کیفیت"
+        "unit":"کنترل کیفیت",
+        "image":"/images/personnel/section/qc.jfif"
       },
       {
         "id":5,
         "type":"پشتیبانی",
-        "unit":"قالب سازی"
+        "unit":"قالب سازی",
+        "image":"/images/personnel/section/diecasting.jpg"
       },
       {
         "id":7,
         "type":"پشتیبانی",
-        "unit":"حمل و نقل"
+        "unit":"حمل و نقل",
+        "image":"/images/personnel/section/transportation.jfif"
       },
       {
         "id":8,
         "type":"پشتیبانی",
-        "unit":"اداری"
+        "unit":"اداری",
+        "image":"/images/personnel/section/administrative.jfif"
       },
       {
         "id":9,
         "type":"پشتیبانی",
-        "unit":"انبار"
+        "unit":"انبار",
+        "image":"/images/personnel/section/store.jpg"
       },
       {
         "id":10,
         "type":"پشتیبانی",
-        "unit":"خدمات"
+        "unit":"خدمات",
+        "image":"/images/personnel/section/service.png"
       }
     ],
     "die": [
