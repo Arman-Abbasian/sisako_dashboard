@@ -44,7 +44,7 @@ export default function Type({kind}) {
           <Link key={item.id} href={`/press/detail/${item.id}`} legacyBehavior><a className='w-full'>
           <div className='grid grid-cols-2  gap-4'>
             <div className='aspect-w-1 aspect-h-1 '>
-              <img src={`/images/press/press/${item.id}.jpg`} alt="press" className='w-full h-full object-center object-cover rounded-sm' />
+              <img src={item.image} alt="press" className='w-full h-full object-center object-cover rounded-sm' />
             </div>
             <div className='flex flex-col gap-16 justify-center items-start'>
               <div className='flex items-center gap-2'>

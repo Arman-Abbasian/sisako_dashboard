@@ -1,67 +1,99 @@
 {
+  "pressKind":[
+    {
+      "id":1,
+      "type":"ضربه ای",
+      "section":"پرس های ضربه ای",
+      "image":"/images/press/section/pneumatic.png"
+  },
+  {
+    "id":2,
+    "type":"هیدرولیک",
+    "section":"پرس های هیدرولیک",
+    "image":"/images/press/section/hydrolic.png"
+},
+{
+  "id":3,
+  "type":"پرس جوش",
+  "section":"پرس جوش ها",
+  "image":"/images/press/section/welding press.png"
+},
+{
+  "id":4,
+  "type":"جوش co2",
+  "section":"جوش co2",
+  "image":"/images/press/section/welding co2.png"
+},
+{
+  "id":5,
+  "type":"گان",
+  "section":"گان جوش ها",
+  "image":"/images/press/section/welding gun.png"
+}
+  ],
     "press": [
       {
         "id": "SSPPR101",
         "name": "400 تن",
         "maker":"لهستان",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR101.jpg"
       },
       {
         "id":"SSPPR102",
         "name": "100 تن",
         "maker":"لهستان",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR102.jpg"
       },
       {
         "id":"SSPPR103",
         "name": "100 تن",
         "maker": "لهستان",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR103.jpg"
       },
       {
         "id":"SSPPR104",
         "name": "100 تن",
         "maker": "یوگوسلاوی",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR104.jpg"
       },
       {
                 "id":"SSPPR105",
         "name": "160 تن",
         "maker": "روسیه",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR105.jpg"
       },
       {
         "id":"SSPPR106",
         "name": "160 تن",
         "maker": "روسیه",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR106.jpg"
       },
       {
         "id":"SSPPR107",
         "name": "800 تن",
         "maker": "ایران",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR107.jpg"
       },
       {
         "id":"SSPPR108",
         "name": "100 تن",
         "maker": "ایران",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR108.jpg"
       },
       {
         "id":"SSPPR109",
         "name": "250 تن",
         "maker": "ایران",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR109.jpg"
       },
       {
         
@@ -69,7 +101,7 @@
         "name": "1200 تن",
         "maker": "ایران",
         "type":"هیدرولیک",
-        "image":"/images/hydroulic/SSPPR101.jpg"
+        "image":"/images/press/press/hydrolic/SSPPR110.jpg"
       },
   {
     
@@ -77,7 +109,7 @@
   "name": "400 تن",
   "maker": "روسیه",
   "type":"هیدرولیک",
-  "image":"/images/hydroulic/SSPPR101.jpg"
+  "image":"/images/press/press/hydrolic/SSPPR111.jpg"
   },
   {
     

@@ -30,7 +30,7 @@ export default function PressDetail({data}) {
         {/* press card */}
         <div className='grid grid-cols-2 bg-primary-light-green drop-shadow-2xl shadow-primary-dark-green shadow-md p-2 rounded-md gap-4'>
           <div className='aspect-w-1 aspect-h-1 '>
-            <img src={`/images/press/press/${data.id}.jpg`} alt="press" className='w-full h-full object-center object-cover rounded-sm' />
+            <img src={data.image} alt="press" className='w-full h-full object-center object-cover rounded-sm' />
           </div>
           <div className='flex flex-col gap-10 justify-center items-start'>
             <div className='flex items-center gap-2'>
