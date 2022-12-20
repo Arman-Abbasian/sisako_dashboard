@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 
 
 export default function Customer({customer}) {
+  console.log(customer)
     const [products,setProducts]=useState({data:null,error:"",loading:false});
    useEffect(()=>{
     setProducts({data:null,error:"",loading:true})
@@ -62,14 +63,13 @@ export default function Customer({customer}) {
   )
 }
 export async function getStaticPaths() {
+ const {data} =await axios.get(`http://localhost:4000/customers`);
+ const paths=data.map(item=>{
+  return { params: { customerSlug:item.customerName } }
+ });
+ console.log(paths)
     return {
-      paths: [
-        { params: { customerSlug: 'سازه گستر' } },
-        { params: { customerSlug: 'پایا کلاچ' } },
-        { params: { customerSlug: 'جهان کلاچ' } },
-        { params: { customerSlug: 'فرآوری و ساخت' } },
-        { params: { customerSlug: 'پل آستارا' } },
-      ],
+      paths:paths,
       fallback: false,
     }
   };

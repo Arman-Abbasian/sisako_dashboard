@@ -1,9 +1,12 @@
+import axios from 'axios'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
 
-export default function Press() {
+export default function Press({data}) {
+  console.log(data)
   return (
     <div className='p-2'>
       <Head>
@@ -24,77 +27,19 @@ export default function Press() {
         </nav>
       </header>
       <main className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-4  mt-10 mb-20 container mx-auto'>
-    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-      <Link href="die/سازه گستر " legacyBehavior><a className='w-full'>
-          <div className='grid grid-cols-2  gap-4'>
-            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
-            <div className='flex  justify-center items-center'>
-              <h1 className='font-bold text-xl'>سازه گستر</h1>
+      {data.map(item=>(
+        <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md' key={item.id}>
+          <Link href={`die/${item.customerName}`} legacyBehavior><a className='w-full'>
+            <div className='grid grid-cols-2  gap-4'>
+              <div className='aspect-w-1 aspect-h-1 '><img src={item.image} alt='personnel' className='w-full h-full object-center object-contain' /></div>
+              <div className='flex  justify-center items-center'>
+                <h1 className='font-bold text-xl'>{item.customerName}</h1>
+              </div>
             </div>
-          </div>
-          </a></Link>
-    </div>
-    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
-          <div className='grid grid-cols-2  gap-4'>
-            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
-            <div className='flex  justify-center items-center'>
-              <h1 className='font-bold text-xl'>پایا کلاچ</h1>
-            </div>
-          </div>
-          </a></Link>
-    </div>
-    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
-          <div className='grid grid-cols-2  gap-4'>
-            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
-            <div className='flex  justify-center items-center'>
-              <h1 className='font-bold text-xl'>فرآوری و ساخت</h1>
-            </div>
-          </div>
-          </a></Link>
-    </div>
-    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
-          <div className='grid grid-cols-2  gap-4'>
-            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
-            <div className='flex  justify-center items-center'>
-              <h1 className='font-bold text-xl'>جهان کلاچ</h1>
-            </div>
-          </div>
-          </a></Link>
-    </div>
-    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
-          <div className='grid grid-cols-2  gap-4'>
-            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
-            <div className='flex  justify-center items-center'>
-              <h1 className='font-bold text-xl'>پل آستارا</h1>
-            </div>
-          </div>
-          </a></Link>
-    </div>
-    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
-          <div className='grid grid-cols-2  gap-4'>
-            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
-            <div className='flex  justify-center items-center'>
-              <h1 className='font-bold text-xl'>گلدیران</h1>
-            </div>
-          </div>
-          </a></Link>
-    </div>
-        
-    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-      <Link href="die/پایا کلاچ" legacyBehavior><a className='w-full'>
-          <div className='grid grid-cols-2  gap-4'>
-            <div className='aspect-w-1 aspect-h-1 '><img src="/images/customers/sazehGostar.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
-            <div className='flex  justify-center items-center'>
-              <h1 className='font-bold text-xl'>ایران کاوه</h1>
-            </div>
-          </div>
-          </a></Link>
-    </div>
+            </a></Link>
+      </div>
+      ))}
+   
     </main>
       
     <footer className='fixed bottom-0 right-0 left-2 bg-primary-dark-green h-20 w-full flex justify-center items-center'>
@@ -102,4 +47,13 @@ export default function Press() {
       </footer>
     </div>
   )
+};
+export async function getStaticProps() {
+ const {data}=await axios.get(`http://localhost:4000/customers`)
+  
+ return {
+   props: {
+     data:data
+   }, 
+ }
 }
