@@ -1,9 +1,11 @@
+import axios from 'axios'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
 
-export default function Press() {
+export default function Press({data}) {
+  console.log(data)
   return (
     <div className='p-2'>
      <Head>
@@ -24,32 +26,18 @@ export default function Press() {
         </nav>
       </header>
       <main className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-4  mt-10 mb-20 container mx-auto'>
-        <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-        <Link href="/personnel/type/تولیدی" legacyBehavior><a className='w-full'>
-            <div className='grid grid-cols-2  gap-4'>
-              <div className='aspect-w-1 aspect-h-1 '><img src="/images/personnel/kind/producer.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
-              <div className='flex  justify-center items-center'>
-                <h1 className='font-bold text-xl'>نیروهای تولیدی</h1>
+        {data.map(item=>{
+          return <div key={item.id} className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
+          <Link href={`/personnel/type/${item.type}`} legacyBehavior><a className='w-full'>
+              <div className='grid grid-cols-2  gap-4'>
+                <div className='aspect-w-1 aspect-h-1 '><img src={item.image} alt='personnel' className='w-full h-full object-center object-contain' /></div>
+                <div className='flex  justify-center items-center'>
+                  <h1 className='font-bold text-xl'>{item.type}</h1>
+                </div>
               </div>
-            </div>
-          </a></Link>
-    </div>
-
-
-
-
-
-
-    <div className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-        <Link href="/personnel/type/پشتیبانی" legacyBehavior><a className='w-full'>
-            <div className='grid grid-cols-2  gap-4'>
-              <div className='aspect-w-1 aspect-h-1 '><img src="/images/personnel/kind/logistic.png" alt='personnel' className='w-full h-full object-center object-contain' /></div>
-              <div className='flex  justify-center items-center'>
-                <h1 className='font-bold text-xl'>نیروهای پشتیبانی</h1>
-              </div>
-            </div>
-          </a></Link>
-    </div>
+            </a></Link>
+      </div>
+        })}
         
     </main>
       
@@ -58,4 +46,14 @@ export default function Press() {
       </footer>
     </div>
   )
-}
+};
+export async function getStaticProps() {
+  const {data}= await axios.get(`http://localhost:4000/personnelKind`)
+   
+  return {
+    props: {
+      data:data
+    }, 
+  }
+ }
+ 

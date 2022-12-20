@@ -203,62 +203,6 @@
             
         }
     ],
-    "unitType":[
-      {
-        "id":1,
-        "type":"تولیدی",
-        "unit":"پرسکاری",
-        "image":"/images/personnel/section/pressing.jpg"
-      },
-      {
-        "id":2,
-        "type":"تولیدی",
-        "unit":"مونتاژ",
-        "image":"/images/personnel/section/welding.jpg"
-      },
-      {
-        "id":3,
-        "type":"پشتیبانی",
-        "unit":"نت",
-        "image":"/images/personnel/section/net.png"
-      },
-      {
-        "id":4,
-        "type":"پشتیبانی",
-        "unit":"کنترل کیفیت",
-        "image":"/images/personnel/section/qc.jfif"
-      },
-      {
-        "id":5,
-        "type":"پشتیبانی",
-        "unit":"قالب سازی",
-        "image":"/images/personnel/section/diecasting.jpg"
-      },
-      {
-        "id":7,
-        "type":"پشتیبانی",
-        "unit":"حمل و نقل",
-        "image":"/images/personnel/section/transportation.jfif"
-      },
-      {
-        "id":8,
-        "type":"پشتیبانی",
-        "unit":"اداری",
-        "image":"/images/personnel/section/administrative.jfif"
-      },
-      {
-        "id":9,
-        "type":"پشتیبانی",
-        "unit":"انبار",
-        "image":"/images/personnel/section/store.jpg"
-      },
-      {
-        "id":10,
-        "type":"پشتیبانی",
-        "unit":"خدمات",
-        "image":"/images/personnel/section/service.png"
-      }
-    ],
     "die": [
       {
         "id":"ُSG RD B 10 R SG",
@@ -539,7 +483,6 @@
         "performance":[{"فروردین":40},{"اردیبهشت":60},{"خرداد":80}]
       }
     ],
-
     "stage": [
       {
         "id":"1",
@@ -784,7 +727,6 @@
         "image":"/images/products/rienf.webp"
       }
     ],
-
     "parts":[
       {
         "id": "1",
@@ -838,124 +780,6 @@
         "image":"/images/parts/RCNG.png"
       }
     ],
-
-    "personnel": [
-      {
-        "id": "1719899932",
-        "name": "سعید ارجمند",
-        "type":"پشتیبانی",
-        "unit":"اداری",
-        "position":"سرپرست پرسکاری",
-        "performance":50
-      },
-      {
-        "id": "3256845169",
-        "name": "فرزاد رهنماپور ",
-        "type":"تولید",
-        "unit":"پرسکاری",
-        "position":"اپراتور پرسکاری",
-        "performance":20
-      },
-        {
-          "id": "2514856927",
-          "name": "عباس کوثریان",
-          "type":"تولید",
-          "unit":"پرسکاری",
-          "position":"اپراتور پرسکاری",
-          "performance":43
-        },
-        {
-          "id": "1235687584",
-          "name": "بهزاد رضایی",
-          "type":"تولید",
-          "unit":"پرسکاری",
-          "position":"اپراتور پرسکاری",
-          "performance":95
-        },
-        {
-          "id": "1252846983",
-          "name": "اباذر احمدی",
-          "type":"تولید",
-          "unit":"مونتاژ",
-          "position":"اپراتور مونتاژ",
-          "performance":84
-        },
-        {
-          "id": "2148653798",
-          "name": "داوود عسگری",
-          "type":"تولید",
-          "unit":"مونتاژ",
-          "position":"اپراتور مونتاژ",
-          "performance":43
-        },
-        {
-          "id": "3285793419",
-          "name": "حسین جلالت",
-          "lastName":"جلالت",
-          "type":"تولید",
-          "unit":"مونتاژ",
-          "position":"اپراتور مونتاژ",
-          "performance":65
-        },
-        {
-          "id": "5896354981",
-          "name": "امید حسین نیا",
-          "type":"پشتیبانی",
-          "unit":"نت",
-          "position":"اپراتور نت",
-          "performance":38
-        },
-        {
-          "id": "6951247859",
-          "name": "ایرج زارعی",
-          "type":"پشتیبانی",
-          "unit":"نت",
-          "position":"اپراتور نت",
-          "performance":90
-        },
-        {
-          "id": "6598251876",
-          "name": "مجید خوش خلق",
-          "type":"پشتیبانی",
-          "unit":"نت",
-          "position":"اپراتور نت",
-          "performance":36
-        },
-        {
-          "id": "9865281348",
-          "name": "صابر یاری",
-          "type":"پشتیبانی",
-          "unit":"انبار",
-          "position":"سرپرست انبار",
-          "performance":60
-        },
-        {
-          "id": "7849621536",
-          "name": "بهمن غیوری",
-          "type":"پشتیبانی",
-          "unit":"انبار",
-          "position":"اپراتور انبار",
-          "performance":45
-        },
-        {
-          "id": "1228463595",
-          "name": "امیر حسین اکبری",
-          "type":"پشتیبانی",
-          "unit":"انبار",
-          "position":"اپراتور انبار",
-          "performance":[
-            {"name":"فروردین","value":40},
-            {"name":"اردیبهشت","value":80},
-            {"name":"خرداد","value":20}
-          ]
-        }
-        
-      
-  
-  
-  
-  
-    ],
     "customers":[
       {
         "id":1,
@@ -987,6 +811,197 @@
         "customerName":"گلدیران",
         "image":"/images/customers/sazehGostar.png"
       }
+    ],
+    "personnelKind":[
+      {
+        "id":1,
+        "type":"تولیدی",
+        "image":"/images/personnel/kind/producer.png"
+      },
+      {
+        "id":2,
+        "type":"پشتیبانی",
+        "image":"/images/personnel/kind/logistic.png"
+      }
+    ],
+    "unitType":[
+      {
+        "id":1,
+        "type":"تولیدی",
+        "unit":"پرسکاری",
+        "image":"/images/personnel/section/pressing.jpg"
+      },
+      {
+        "id":2,
+        "type":"تولیدی",
+        "unit":"مونتاژ",
+        "image":"/images/personnel/section/welding.jpg"
+      },
+      {
+        "id":3,
+        "type":"پشتیبانی",
+        "unit":"نت",
+        "image":"/images/personnel/section/net.png"
+      },
+      {
+        "id":4,
+        "type":"پشتیبانی",
+        "unit":"کنترل کیفیت",
+        "image":"/images/personnel/section/qc.jfif"
+      },
+      {
+        "id":5,
+        "type":"پشتیبانی",
+        "unit":"قالب سازی",
+        "image":"/images/personnel/section/diecasting.jpg"
+      },
+      {
+        "id":7,
+        "type":"پشتیبانی",
+        "unit":"حمل و نقل",
+        "image":"/images/personnel/section/transportation.jfif"
+      },
+      {
+        "id":8,
+        "type":"پشتیبانی",
+        "unit":"اداری",
+        "image":"/images/personnel/section/administrative.jfif"
+      },
+      {
+        "id":9,
+        "type":"پشتیبانی",
+        "unit":"انبار",
+        "image":"/images/personnel/section/store.jpg"
+      },
+      {
+        "id":10,
+        "type":"پشتیبانی",
+        "unit":"خدمات",
+        "image":"/images/personnel/section/service.png"
+      }
+    ],
+    "personnel": [
+      {
+        "id": "1719899932",
+        "type":"پشتیبانی",
+        "unit":"اداری",
+        "position":"سرپرست پرسکاری",
+        "name": "سعید ارجمند",
+        "performance":50,
+        "image":"/images/personnel/person/0046701575.png"
+      },
+      {
+        "id": "3256845169",
+        "type":"تولیدی",
+        "unit":"پرسکاری",
+        "position":"اپراتور پرسکاری",
+        "name": "فرزاد رهنماپور ",
+        "performance":20,
+        "image":"/images/personnel/person/0046701575.png"
+      },
+        {
+          "id": "2514856927",
+          "type":"تولیدی",
+          "unit":"پرسکاری",
+          "position":"اپراتور پرسکاری",
+          "name": "عباس کوثریان",
+          "performance":43,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "1235687584",
+          "type":"تولیدی",
+          "unit":"پرسکاری",
+          "position":"اپراتور پرسکاری",
+          "name": "بهزاد رضایی",
+          "performance":95,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "1252846983",
+          "type":"تولیدی",
+          "unit":"مونتاژ",
+          "position":"اپراتور مونتاژ",
+          "name": "اباذر احمدی",
+          "performance":84,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "2148653798",
+          "type":"تولیدی",
+          "unit":"مونتاژ",
+          "position":"اپراتور مونتاژ",
+          "name": "داوود عسگری",
+          "performance":43,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "3285793419",
+          "type":"تولیدی",
+          "unit":"مونتاژ",
+          "position":"اپراتور مونتاژ",
+          "name": "حسین جلالت",
+          "performance":65,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "5896354981",
+          "type":"پشتیبانی",
+          "unit":"نت",
+          "position":"اپراتور نت",
+          "name": "امید حسین نیا",
+          "performance":38,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "6951247859",
+          "type":"پشتیبانی",
+          "unit":"نت",
+          "position":"اپراتور نت",
+          "name": "ایرج زارعی",
+          "performance":90,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "6598251876",
+          "type":"پشتیبانی",
+          "unit":"نت",
+          "position":"اپراتور نت",
+          "name": "مجید خوش خلق",
+          "performance":36,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "9865281348",
+          "type":"پشتیبانی",
+          "unit":"انبار",
+          "position":"سرپرست انبار",
+          "name": "صابر یاری",
+          "performance":60,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "7849621536",
+          "type":"پشتیبانی",
+          "unit":"انبار",
+          "position":"اپراتور انبار",
+          "name": "بهمن غیوری",
+          "performance":45,
+          "image":"/images/personnel/person/0046701575.png"
+        },
+        {
+          "id": "1228463595",
+          "type":"پشتیبانی",
+          "unit":"انبار",
+          "position":"اپراتور انبار",
+          "name": "امیر حسین اکبری",
+          "performance":[
+            {"name":"فروردین","value":40},
+            {"name":"اردیبهشت","value":80},
+            {"name":"خرداد","value":20}
+          ],
+          "image":"/images/personnel/person/0046701575.png"
+        }
     ]
     
   }

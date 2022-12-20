@@ -29,7 +29,7 @@ export default function PersonnelUnit({data,typeSlug}) {
     {data && 
     data.map(item=>{
         return  <div key={item.id} className='bg-primary-light-green drop-shadow-lg p-2 rounded-md'>
-<Link key={item.id} href={`/personnel/type/${typeSlug}/${item.unit}`} legacyBehavior><a className='w-full'>
+      <Link key={item.id} href={`/personnel/type/${typeSlug}/${item.unit}`} legacyBehavior><a className='w-full'>
           <div className='grid grid-cols-2  gap-4'>
             <div className='aspect-w-1 aspect-h-1 '><img src={item.image} alt='personnel' className='w-full h-full object-center object-cover rounded-sm' /></div>
             <div className='flex  justify-center items-center'>
