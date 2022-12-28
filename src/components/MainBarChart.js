@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, ResponsiveContainer, XAxis,Tooltip } from 'recharts';
 
 const data = [
   {
@@ -51,6 +51,8 @@ const data = [
       <ResponsiveContainer width="100%" height={200}>
         <BarChart  data={data}>
           <Bar dataKey="pv" fill="#329d9c" />
+          <XAxis dataKey="name" />
+          <Tooltip />
         </BarChart>
       </ResponsiveContainer>
     );

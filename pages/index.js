@@ -5,6 +5,7 @@ import MainAreaChart from '../src/components/MainAreaChart'
 import MainBarChart from '../src/components/MainBarChart'
 import MainLineChart from '../src/components/MainLineChart'
 import MainPieChart from '../src/components/MainPieChart'
+import Example from '../src/components/testChart'
 
 
 export default function Home() {
@@ -70,10 +71,13 @@ export default function Home() {
         </div>
         <div className='col-span-2 w-full overflow-auto bg-primary-light-green drop-shadow-lg p-8 rounded-md flex justify-center items-center'><MainLineChart /></div>
         <div className='col-span-2 w-full overflow-auto bg-primary-light-green drop-shadow-lg p-8 rounded-md flex justify-center items-center'><MainBarChart /></div> 
-        <div className='col-span-2 w-full overflow-auto bg-primary-light-green drop-shadow-lg p-8 rounded-md flex justify-center items-center'><MainAreaChart /></div>
+        <div className='flex flex-col col-span-2 w-full overflow-auto bg-primary-light-green drop-shadow-lg p-8 rounded-md justify-center items-center'>
+        <h2>افزایش تعداد پرسنل از سال 1395 الی 1401</h2>
+        <MainAreaChart />
+        </div>
         <div className='col-span-2 w-full overflow-auto bg-primary-light-green drop-shadow-lg p-8 rounded-md flex justify-center items-center'><MainPieChart /></div>
     </main>
-      
+    
       <footer className='fixed bottom-0 right-0 left-2 bg-primary-dark-green h-20 w-full flex justify-center items-center'>
         <p>با بیش از بیست سال سابقه کار در صنعت خودرو</p>
       </footer>
