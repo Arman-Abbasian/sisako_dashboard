@@ -1,32 +1,69 @@
 import React from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
-  { name: 'Group A', value: 25 },
-  { name: 'Group B', value: 30 },
-  { name: 'Group C', value: 35 },
-  { name: 'Group D', value: 40 },
-  { name: 'Group E', value: 45 },
-  { name: 'Group F', value: 55 },
+  {
+    name: '1395',
+    uv: 4000,
+    pv: 50,
+    amt: 2400,
+  },
+  {
+    name: '1396',
+    uv: 3000,
+    pv: 70,
+    amt: 2210,
+  },
+  {
+    name: '1397',
+    uv: 2000,
+    pv: 85,
+    amt: 2290,
+  },
+  {
+    name: '1398',
+    uv: 2780,
+    pv: 70,
+    amt: 2000,
+  },
+  {
+    name: '1399',
+    uv: 1890,
+    pv: 90,
+    amt: 2181,
+  },
+  {
+    name: '1400',
+    uv: 2390,
+    pv: 110,
+    amt: 2500,
+  },
+  {
+    name: '1401',
+    uv: 3490,
+    pv: 150,
+    amt: 2100,
+  },
 ];
 
- const MainPieChart=()=> {
-
+ const MainLineChart =()=> {
     return (
-        <ResponsiveContainer  width="100%" height={200}>
-        <PieChart>
-          <Pie
-            dataKey="value"
-            startAngle={0}
-            endAngle={360}
-            data={data}
-            outerRadius={75}
-            fill="#329d9c"
-            label
-          />
-        </PieChart>
-        </ResponsiveContainer>
- 
+      <ResponsiveContainer width="100%" height={200}>
+        <LineChart width={350} data={data}>
+          <Line type="monotone" dataKey="pv" stroke="#329d9c" strokeWidth={2} />
+          <XAxis dataKey="name"/>
+          <Tooltip />
+        </LineChart>
+      </ResponsiveContainer>
+      
     );
-  }
-export default MainPieChart;
+}
+export default MainLineChart;
+
+
+
+
+
+
+
+
